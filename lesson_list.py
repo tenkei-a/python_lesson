@@ -58,3 +58,22 @@
 # print(x)
 
 # print(help(list))
+
+i = [1,2,3,4,5]
+j = i
+j[0] = 100
+print(id(j))
+print(id(i))
+
+x = [1,2,3,4,5]
+y = x.copy()
+# y = x[:]
+y[0] = 100
+print('y = ',id(y))
+print('x = ',id(x))
+
+x = 20
+y = x
+y = 5
+print(id(x))
+print(id(y))
